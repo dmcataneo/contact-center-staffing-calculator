@@ -135,7 +135,7 @@ def chart_costs(summary: pd.DataFrame) -> go.Figure:
 
 st.title("Contact center staffing and cost calculator")
 st.caption(
-    "Estimates the team for a single, well-defined service queue, under "
+    "Estimates staffing and cost for one service queue, using "
     "the assumptions stated in 'Assumptions and limits'."
 )
 
@@ -280,3 +280,8 @@ not as a guaranteed forecast. Validate against real operational data
 before hiring or letting people go.
 """
 )
+
+
+st.divider()
+st.caption("By [dmcataneo](https://github.com/dmcataneo) · "
+           "[Source code](https://github.com/dmcataneo/contact-center-staffing-calculator)")
