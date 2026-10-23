@@ -265,7 +265,7 @@ The numbers above hold under these assumptions (Erlang C model):
 - **Random contact arrivals** and variable handle times
   (Poisson/exponential distributions, the standard for this kind of queue).
 - **No abandonment**: the model assumes every contact waits until it is
-  answered. Queues with real-world abandonment need slightly smaller teams.
+  answered. Queues with abandonment require a model that accounts for it; estimates can differ.
 - **No breaks or unavailability** (shrinkage): in practice, the hired
   team needs to be larger than the calculated one, to cover breaks,
   absences and training. That adjustment varies by operation; add it on
