@@ -6,7 +6,7 @@ handle time and a service-level target. It compares three scenarios:
 hiring more people, cutting handle time (productivity), or assuming an
 automation removes part of the contacts from the queue (a hypothesis).
 
-Built to support operational decisions with the math visible — it is not
+Built to support operational decisions with the math visible. It is not
 a guaranteed forecast. See "Assumptions and limits" below.
 
 ## Running it
@@ -41,16 +41,16 @@ The browser opens automatically at `http://localhost:8501`.
 
 1. Upload a CSV with two columns: `period` (e.g. `08:00`) and `contacts`
    (expected volume in that interval). Without a CSV, the app uses the
-   sample data in `data/sample_demand.csv` — that data is fictional.
+   sample data in `data/sample_demand.csv` - that data is fictional.
 2. Adjust in the sidebar: hourly cost per agent, average handle time
    (AHT), service-level target and target wait time.
 3. Compare the scenarios: base, productivity (lower AHT) and automation
-   (lower volume — a hypothesis to test, not proven savings).
+   (lower volume - a hypothesis to test, not proven savings).
 
 Reading the charts: the "theoretical maximum capacity" line shows how
 many contacts the staffed team would handle at 100% occupancy. Because
 the team is sized to hit the service-level target (not to run at the
-limit), expected real-world occupancy stays below 100% — which is why
+limit), expected real-world occupancy stays below 100%, which is why
 the line sits above the demand bars.
 
 ## Tests
@@ -84,7 +84,7 @@ The results hold under these assumptions (Erlang C model):
   operation. Add it on top of the model result for your own reality.
 - No multiple channels and no priorities between contacts.
 - The automation scenario is a hypothesis about volume, used to measure
-  sensitivity — it is not measured savings.
+  sensitivity - it is not measured savings.
 
 Use it to compare scenarios and support decisions. Validate against real
 operational data before hiring or letting people go.
