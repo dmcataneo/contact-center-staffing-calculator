@@ -6,8 +6,8 @@ handle time and a service-level target. It compares three scenarios:
 hiring more people, cutting handle time (productivity), or assuming an
 automation removes part of the contacts from the queue (a hypothesis).
 
-Built to support operational decisions with the math visible. It is not
-a guaranteed forecast. See "Assumptions and limits" below.
+The calculations use Erlang C. Use them to compare staffing options,
+not as a guaranteed forecast. See "Assumptions and limits" below.
 
 ## Running it
 
@@ -88,3 +88,7 @@ The results hold under these assumptions (Erlang C model):
 
 Use it to compare scenarios and support decisions. Validate against real
 operational data before hiring or letting people go.
+
+## Author
+
+[dmcataneo](https://github.com/dmcataneo)
