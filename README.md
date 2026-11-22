@@ -2,7 +2,7 @@
 
 > A toy I built to play with contact center staffing. Not a product.
 >
-> **Type:** side project, for fun · **Stack:** Python, Streamlit · **Author:** an operations person, not a developer. I build these at night, next to my day job. Nothing very serious.
+> **Type:** side project, for fun · **Stack:** Python, Streamlit · **Author:** an operations person, not a developer. I build these in my free time, next to my day job. Nothing very serious.
 
 Before changing a contact center team, I want to know what each option
 really buys. Hire more people? Cut handle time? Or let automation take
