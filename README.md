@@ -1,10 +1,18 @@
 # Contact center staffing and cost calculator
 
-A Streamlit app that estimates the team and the cost of running a single
-service queue, from the contact volume per time interval, the average
-handle time and a service-level target. It compares three scenarios:
-hiring more people, cutting handle time (productivity), or assuming an
-automation removes part of the contacts from the queue (a hypothesis).
+> A toy I built to play with contact center staffing. Not a product.
+>
+> **Type:** side project, for fun · **Stack:** Python, Streamlit · **Author:** an operations person, not a developer. I build these at night, next to my day job. Nothing very serious.
+
+Before changing a contact center team, I want to know what each option
+really buys. Hire more people? Cut handle time? Or let automation take
+some contacts off the queue? This app puts the three side by side.
+
+It is one of the simulators I use around the voice agent I built at work
+in 2026, to try ideas before anything goes live. You give it the contacts
+per interval, the average handle time and a service-level target, and it
+estimates the team and the cost for a single queue. The automation
+scenario is a hypothesis about volume, not a promise.
 
 The calculations use Erlang C. Use them to compare staffing options,
 not as a guaranteed forecast. See "Assumptions and limits" below.
